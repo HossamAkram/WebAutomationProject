@@ -1,0 +1,26 @@
+{
+  "registerCredentials": {
+    "item1": {
+      "firstName": "Hossam",
+      "lastName": "Akram",
+      "validEmail": "validmail2@domain.com",
+      "telephone": "0100000000",
+      "validPassword": "4UTtb8dEGy@5",
+      "invalidPAssword": "4UTtb8dEGy@5a"
+    },
+    "item2": {
+      "firstName": "Hossam",
+      "lastName": "Akram",
+      "validEmail": "validmail2@domain.com",
+      "telephone": "0100000000",
+      "validPassword": "4UTtb8dEGy@5",
+      "invalidPAssword": "4UTtb8dEGy@5a"
+    }
+  },
+
+  "loginCredentials": {
+    "validEmail": "hossam.akram99@gmail.com",
+    "validPassword": "kb67#UHhPQ55#R"
+  }
+
+}
