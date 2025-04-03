@@ -12,26 +12,26 @@ public class HomePageTests extends TestBase {
 
     //tests
     @Test
-    public HomePageTests searchForProduct(){
+    public void searchForProduct(){
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
-                .searchForProduct("macbook")
+                .searchForProduct("iphone")
                 .clickSearchButton()
-                .validateSearchResults("MacBook");
-        return this;
+                .validateSearchResults("iPhone");
+
     }
 
     @Test
     public void addProductToCart(){
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
-                .addProductToCart()
-                .validateCartItems(PropertiesUtil.getPropertyValue("macbookAdded"))
+                .addProductToCart("iPhone")
+                .validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
                 .clickShoppingCartLink()
                 .validateShoppingCartPage();
     }
 
-    @Test
+    @Test(dependsOnMethods = "com.qafox.tests.LoginTests.validLoginTest")
     public void addProductToWishlist(){
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
@@ -40,7 +40,7 @@ public class HomePageTests extends TestBase {
                 .validateWishlistPage();
     }
 
-    @Test
+    @Test(dependsOnMethods = "com.qafox.tests.LoginTests.validLoginTest")
     public void addProductToCompareList(){
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
@@ -58,7 +58,5 @@ public class HomePageTests extends TestBase {
                 .selectCurrency("EUR")
                 .validateCurrencyChanged("€");
     }
-
-
 
 }

@@ -58,14 +58,14 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public HomePageTests validLoginTest() {
+    public void validLoginTest() {
         new LoginPage(DriverManager.getDriver())
                 .navigateToLoginPage()
                 .enterEmail(testData.getJsonData("loginCredentials.validEmail"))
                 .enterPassword(testData.getJsonData("loginCredentials.validPassword"))
                 .clickLoginButton()
                 .validateRedirectionToAcountPage();
-        return new HomePageTests();
+
     }
 
 

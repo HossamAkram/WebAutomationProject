@@ -4,6 +4,10 @@ import com.qafox.utils.*;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HomePage {
     //variables
@@ -49,11 +53,13 @@ public class HomePage {
         return this;
     }
 
-    @Step("Add product to cart")
-    public HomePage addProductToCart() {
-        ElementActions.click(driver, addToCartButton);
+    @Step("Add product {productName} to cart")
+    public HomePage addProductToCart(String productName) {
+        By productAddToCartButton = By.xpath("//div[contains(@class, 'product-thumb')]//h4/a[normalize-space(text())='" + productName + "']/ancestor::div[contains(@class, 'product-thumb')]//button[contains(@onclick, 'cart.add')]");
+        ElementActions.click(driver, productAddToCartButton);
         return this;
     }
+
 
     @Step("Add product to wishlist")
     public HomePage addProductToWishlist() {
@@ -111,7 +117,9 @@ public class HomePage {
     //validations
     @Step("Validate cart items")
     public HomePage validateCartItems(String expectedCount) {
-        String actualText = ElementActions.getText(driver, By.id("cart-total"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("cart-total"), expectedCount));
+        String actualText = ElementActions.getText(driver, cartDropdownButton);
         Validations.validateEquals(actualText, expectedCount, "Cart item count mismatch!");
         return this;
     }

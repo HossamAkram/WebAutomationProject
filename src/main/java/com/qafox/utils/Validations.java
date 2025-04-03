@@ -12,6 +12,8 @@ public class Validations {
     @Step("Validate true")
     public static void validateTrue(boolean condition , String message){
         Assert.assertTrue(condition,message);
+        LogsUtil.info("Validating the Condition is true");
+
     }
     @Step("Validate false")
     public static void validateFalse(boolean condition , String message){
@@ -20,7 +22,7 @@ public class Validations {
     @Step("Validate equals")
     public static void validateEquals(String actual , String expected , String message){
         Assert.assertEquals(actual,expected,message);
-    }
+        LogsUtil.info("Validating that actual value: '" + actual + "' matches expected value: '" + expected + "'.");    }
     @Step("Validate not equals")
     public static void validateNotEquals(String actual , String expected , String message){
         Assert.assertNotEquals(actual,expected,message);

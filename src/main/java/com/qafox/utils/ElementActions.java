@@ -71,4 +71,9 @@ public class ElementActions {
         WebElement element = driver.findElement(locator);
         actions.moveToElement(element).perform();
     }
+
+    public static List<WebElement> getElements(WebDriver driver, By locator) {
+        return driver.findElements(locator);
+    }
+
 }

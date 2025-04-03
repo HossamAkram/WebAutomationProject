@@ -1,0 +1,8 @@
+[INFO] - [03-04-2025 03:53:32] [main] [com.qafox.listeners.TestNGListeners] -  Test execution started
+[INFO] - [03-04-2025 03:53:32] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [03-04-2025 03:53:32] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml
+
+[INFO] - [03-04-2025 03:53:34] [main] [com.qafox.drivers.DriverManager] - driver created on edge
+[INFO] - [03-04-2025 03:53:34] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [03-04-2025 03:53:37] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/login

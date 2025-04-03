@@ -54,7 +54,7 @@ public class FilesUtil {
 
     public static void cleanDirectory(File file){
         try {
-            FileUtils.cleanDirectory(file);
+            FileUtils.deleteQuietly(file);
         }catch (Exception e){
             LogsUtil.error(e.getMessage());
         }

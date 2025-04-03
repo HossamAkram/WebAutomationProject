@@ -4,27 +4,25 @@ import com.qafox.drivers.DriverManager;
 import com.qafox.utils.BrowserActions;
 import com.qafox.utils.JsonUtil;
 import com.qafox.utils.PropertiesUtil;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 
 public class TestBase {
     //variables
     JsonUtil testData;
     //configurations
-    @BeforeClass
+    @BeforeSuite(alwaysRun = true)
     public void beforeClass() {
         testData = new JsonUtil("test-data");
         DriverManager.createInstance("edge");
         PropertiesUtil.loadProperties();
     }
 
-    @AfterClass
+    @AfterSuite(alwaysRun = true)
     public void tearDown() {
 
         if (DriverManager.getDriver() != null) {
             BrowserActions.closeBrowser(DriverManager.getDriver());
-            // CustomSoftAssertion.CustomAssertAll();
+            // CustomSoftAssertion.customAssertAll();
         }
     }
     @AfterMethod

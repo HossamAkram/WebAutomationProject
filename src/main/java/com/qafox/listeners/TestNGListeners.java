@@ -12,7 +12,7 @@ public class TestNGListeners implements IExecutionListener , ITestListener , IIn
     File logs = new File("test-outputs/logs");
     @Override
     public void onExecutionStart() {
-        LogsUtil.info("Test execution started");
+        LogsUtil.info(" Test execution started");
         PropertiesUtil.loadProperties();
         FilesUtil.deleteFiles(allure_results);
         FilesUtil.deleteFiles(screenshots);
@@ -21,14 +21,14 @@ public class TestNGListeners implements IExecutionListener , ITestListener , IIn
     }
     @Override
     public void onExecutionFinish() {
-        LogsUtil.info("Test execution finished");
+        LogsUtil.info(" Test execution finished");
     }
 
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if(method.isTestMethod()){
             try {
-                CustomSoftAssertion.CustomAssertAll();
+                CustomSoftAssertion.customAssertAll(testResult);
 
             }catch (AssertionError e){
                 testResult.setStatus(ITestResult.FAILURE);
@@ -45,16 +45,16 @@ public class TestNGListeners implements IExecutionListener , ITestListener , IIn
     }
     @Override
     public void onTestSuccess(ITestResult result) {
-        LogsUtil.info("Test case"+result.getName()+"passed");
+        LogsUtil.info(" Test case"+result.getName()+"passed");
     }
     @Override
     public void onTestFailure(ITestResult result) {
-        LogsUtil.info("Test case"+result.getName()+"failed");
+        LogsUtil.info(" Test case"+result.getName()+"failed");
 
     }
     @Override
     public void onTestSkipped(ITestResult result) {
-        LogsUtil.info("Test case"+result.getName()+"skipped");
+        LogsUtil.info(" Test case"+result.getName()+"skipped");
 
     }
 }
