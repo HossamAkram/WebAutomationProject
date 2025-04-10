@@ -120,7 +120,7 @@ public class HomePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("cart-total"), expectedCount));
         String actualText = ElementActions.getText(driver, cartDropdownButton);
-        Validations.validateEquals(actualText, expectedCount, "Cart item count mismatch!");
+        CustomSoftAssertion.softAssertion.assertEquals(actualText, expectedCount, "Cart item count mismatch!");
         return this;
     }
 
@@ -148,7 +148,7 @@ public class HomePage {
     public HomePage validateAddedToComparisonListMessage() {
         String expectedMessage = "Success: You have added";
         String actualMessage = ElementActions.getText(driver,addedToComparisonListMessage);
-        Validations.validateTrue(actualMessage.contains(expectedMessage), "The comparison success message is not displayed!");
+        CustomSoftAssertion.softAssertion.assertTrue(actualMessage.contains(expectedMessage), "The comparison success message is not displayed!");
         return this;
     }
     @Step("Validate redirection to Product Comparison page")

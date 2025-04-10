@@ -45,16 +45,16 @@ public class TestNGListeners implements IExecutionListener , ITestListener , IIn
     }
     @Override
     public void onTestSuccess(ITestResult result) {
-        LogsUtil.info(" Test case"+result.getName()+"passed");
+        LogsUtil.info(" Test case "+result.getName()+" passed");
     }
     @Override
     public void onTestFailure(ITestResult result) {
-        LogsUtil.info(" Test case"+result.getName()+"failed");
+        LogsUtil.info(" Test case "+result.getName()+" failed");
 
     }
     @Override
     public void onTestSkipped(ITestResult result) {
-        LogsUtil.info(" Test case"+result.getName()+"skipped");
+        LogsUtil.info(" Test case "+result.getName()+" skipped");
 
     }
 }

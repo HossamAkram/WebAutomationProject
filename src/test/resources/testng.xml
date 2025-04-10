@@ -1,39 +1,14 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Tests Suite" parallel="false">
 
-<suite name="E2E Suite">
-    <test name="End-to-End Test">
+    <test name="Full Suite">
         <classes>
-            <class name="com.qafox.tests.E2eTest"/>
+            <class name="com.qafox.tests.RegisterTests"/>
+            <class name="com.qafox.tests.ForgotPasswordTests"/>
+            <class name="com.qafox.tests.LoginTests"/>
+            <class name="com.qafox.tests.HomePageTests"/>
+            <class name="com.qafox.tests.ShoppingCartTests"/>
         </classes>
     </test>
-</suite>
 
-<suite name="All Tests Suite">
-<!-- Register Tests -->
-<test name="Register Tests">
-    <classes>
-        <class name="com.qafox.tests.RegisterTests"/>
-    </classes>
-</test>
-
-<!-- Login Tests -->
-<test name="Login Tests">
-    <classes>
-        <class name="com.qafox.tests.LoginTests"/>
-    </classes>
-</test>
-
-<!-- Home Page Tests -->
-<test name="Home Page Tests">
-    <classes>
-        <class name="com.qafox.tests.HomePageTests"/>
-    </classes>
-</test>
-
-<!-- Forgot Password Tests -->
-<test name="Forgot Password Tests">
-    <classes>
-        <class name="com.qafox.tests.ForgotPasswordTests"/>
-    </classes>
-</test>
 </suite>

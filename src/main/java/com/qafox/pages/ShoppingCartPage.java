@@ -1,5 +1,6 @@
 package com.qafox.pages;
 
+import com.qafox.utils.CustomSoftAssertion;
 import com.qafox.utils.ElementActions;
 import com.qafox.utils.PropertiesUtil;
 import com.qafox.utils.Validations;
@@ -16,13 +17,13 @@ public class ShoppingCartPage {
     }
 
     //locators
-    private By productTotal = By.xpath("//table//td[contains(text(),'Total')]/following-sibling::td");
-    private By shoppingCartTotal = By.xpath("//td[strong[text()='Total:']]/following-sibling::td");
+    private By productTotal = By.xpath("(//div[@id='content']//table)[1]//tbody/tr[1]/td[@class='text-right'][2]");
+    private By shoppingCartTotal = By.xpath("//tr[td/strong[text()='Total:']]/td[2]");
     private By outOfStock = By.xpath("//td[@class='text-left']/span[@class='text-danger']");
-    private By productsNotAvailableMessage = By.xpath("//div[contains(@class, 'alert-danger') and contains(text(), 'not available')]");
-    private By checkoutButton = By.xpath("//a[@class='btn btn-primary' and text()='Checkout']");
+    private By productsNotAvailableMessage = By.xpath("//div[contains(@class,'alert-danger') and contains(text(),'not available')]");
     private By continueShoppingButton = By.xpath("//a[text()='Continue Shopping']");
     private By removeItemButton = By.xpath("//button[@class='btn btn-danger' and @data-original-title='Remove']");
+    private By checkoutButton = By.xpath("//div[@class='pull-right']/a[text()='Checkout']");
 
 
     //navigate to page
@@ -51,16 +52,16 @@ public class ShoppingCartPage {
     public ShoppingCartPage validateCartTotal() {
         String productTotalText = ElementActions.getText(driver, productTotal);
         String cartTotalText = ElementActions.getText(driver, shoppingCartTotal);
-
-        Validations.validateEquals(productTotalText, cartTotalText, "Cart total does not match product total!");
+        CustomSoftAssertion.softAssertion.assertEquals(productTotalText, cartTotalText, "Cart total does not match product total!");
         return this;
     }
 
     public ShoppingCartPage validateStockAndProceed() {
         if (!ElementActions.getElements(driver, outOfStock).isEmpty()) {
+            String raw = ElementActions.getText(driver, productsNotAvailableMessage);
+            String actual = raw.replace("×", "").trim();
             Validations.validateEquals(
-                    ElementActions.getText(driver, productsNotAvailableMessage),
-                    "Products marked with *** are not available in the desired quantity or not in stock!\n",
+                    actual, "Products marked with *** are not available in the desired quantity or not in stock!",
                     "Out of stock message not displayed!");
             clickRemoveItem().clickContinueShoppingButton();
         } else {

@@ -11,7 +11,7 @@ public class ForgotPasswordTests extends TestBase {
 
     //tests
     @Test
-    public void forgotPassword(){
+    public void forgotPasswordValidEmail(){
         new ForgotPasswordPage(DriverManager.getDriver())
                 .navigateToForgotPasswordPage()
                 .enterEmail(testData.getJsonData("loginCredentials.validEmail"))

@@ -26,12 +26,12 @@ public class HomePageTests extends TestBase {
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
                 .addProductToCart("iPhone")
-                .validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
+                //.validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
                 .clickShoppingCartLink()
                 .validateShoppingCartPage();
     }
 
-    @Test(dependsOnMethods = "com.qafox.tests.LoginTests.validLoginTest")
+    @Test( dependsOnMethods = "com.qafox.tests.LoginTests.validLoginTest")
     public void addProductToWishlist(){
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()

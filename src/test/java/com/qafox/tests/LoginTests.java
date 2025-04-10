@@ -57,7 +57,7 @@ public class LoginTests extends TestBase {
                 .validateLoginErrorMessage();
     }
 
-    @Test
+    @Test(priority = 1)
     public void validLoginTest() {
         new LoginPage(DriverManager.getDriver())
                 .navigateToLoginPage()
@@ -67,9 +67,5 @@ public class LoginTests extends TestBase {
                 .validateRedirectionToAcountPage();
 
     }
-
-
-
-
 
 }

@@ -4,8 +4,6 @@ import com.qafox.drivers.DriverManager;
 import com.qafox.listeners.TestNGListeners;
 import com.qafox.pages.HomePage;
 import com.qafox.pages.LoginPage;
-import com.qafox.pages.RegisterPage;
-import com.qafox.utils.PropertiesUtil;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 

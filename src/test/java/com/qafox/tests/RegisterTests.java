@@ -21,11 +21,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMissingFirstName() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
-                .confirmPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton();
     }
@@ -34,11 +34,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMissingLastName() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
-                .confirmPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton();
     }
@@ -47,11 +47,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMissingEmail() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
-                .confirmPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton();
     }
@@ -60,11 +60,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMissingTelephone() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
-                .confirmPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton();
     }
@@ -73,11 +73,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMissingPassword() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .confirmPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton();
     }
@@ -86,11 +86,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMissingConfirmPassword() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton();
     }
@@ -99,11 +99,11 @@ public class RegisterTests extends TestBase {
     public void registerWithMismatchedPasswords() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .confirmPassword("DifferentPassword123")
                 .toggleTermsCheckButton()
                 .clickContinueButton();
@@ -113,18 +113,18 @@ public class RegisterTests extends TestBase {
     public LoginTests registerWithValidData() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1validPassword"))
-                .confirmPassword(testData.getJsonData("registerCredentials..item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton()
                 .clickMyAccountDropdown()
                 .clickMyAccountOption("Logout");
 
-               // .validateRedirectionToAcountCreatedPage();
+        // .validateRedirectionToAcountCreatedPage();
         return new LoginTests();
     }
 }

@@ -26,8 +26,8 @@ public class ForgotPasswordPage {
     //navigate to page
     @Step("Navigate to forgot password page")
     public ForgotPasswordPage navigateToForgotPasswordPage(){
-        ElementActions.click(driver,myAccountDropdown);
-        ElementActions.click(driver,logoutOption);
+        //ElementActions.click(driver,myAccountDropdown);
+        //ElementActions.click(driver,logoutOption);
         BrowserActions.navigateToUrl(driver,PropertiesUtil.getPropertyValue("forgotPasswordPage"));
         return this;
     }

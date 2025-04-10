@@ -50,7 +50,6 @@ public class LoginPage {
     }
 
     //validations
-
     @Step("Validate login error message")
     public LoginPage validateLoginErrorMessage() {
         String expectedMessage = "Warning: No match for E-Mail Address and/or Password.";
