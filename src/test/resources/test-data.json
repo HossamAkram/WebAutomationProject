@@ -21,6 +21,17 @@
   "loginCredentials": {
     "validEmail": "hossam.akram99@gmail.com",
     "validPassword": "kb67#UHhPQ55#R"
-  }
+  },
 
+
+  "contactUs": {
+    "validName": "John Doe",
+    "validEmail": "john@example.com",
+    "validEnquiry": "I am interested in learning more about your products and services.",
+    "shortName": "Jo",
+    "longName": "JonathanJonathanJonathanJonathanJonathanJonathanJonathan",
+    "invalidEmail": "john[at]example.com",
+    "shortEnquiry": "Hi",
+    "longEnquiry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat."
+  }
 }

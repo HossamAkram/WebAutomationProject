@@ -17,7 +17,8 @@ public class ElementActions {
     public static void sendData(WebDriver driver, By locator, String data){
         Waits.waitForElementClickability(driver,locator);
         Scrolling.scrollToElement(driver,locator);
-        findElement(driver, locator).sendKeys(data);
+        findElement(driver, locator).clear();
+        findElement(driver,locator).sendKeys(data);
         LogsUtil.info("data entered",data," in the field",locator.toString());
     }
     @Step("clicking the {locator} element")

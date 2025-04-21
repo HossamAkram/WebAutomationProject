@@ -53,8 +53,6 @@ public class BrowserFactory {
         edgeOptions.addArguments("--disable-infobars");
         edgeOptions.addArguments("--disable-notifications");
         edgeOptions.addArguments("--allow-remote-origins=*");
-        //<Map String , Object> prefs=
-        //edgeOptions.setExperimentalOption("prefs",prefs);
         edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         //edgeOptions.addArguments("--headless");
         return edgeOptions;

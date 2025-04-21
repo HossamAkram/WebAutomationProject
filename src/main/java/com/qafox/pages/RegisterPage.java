@@ -95,8 +95,9 @@ public class RegisterPage {
 
 
     //validations
-    public void validateRedirectionToAcountCreatedPage(){
+    public RegisterPage validateRedirectionToAcountCreatedPage(){
         Validations.validatePageUrl(driver,PropertiesUtil.getPropertyValue("acountCreatedPage"));
+        return this;
 
     }
     public RegisterPage validateSuccessMessage(){

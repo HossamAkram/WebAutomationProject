@@ -23,7 +23,7 @@ public class TestBase {
     }
 
 
-    @AfterSuite(alwaysRun = true)
+    @AfterSuite
     public void tearDown() {
 
         if (DriverManager.getDriver() != null) {

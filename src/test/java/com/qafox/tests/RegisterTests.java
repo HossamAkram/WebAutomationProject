@@ -6,6 +6,8 @@ import com.qafox.pages.RegisterPage;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import java.time.Instant;
+
 @Listeners(TestNGListeners.class)
 public class RegisterTests extends TestBase {
 
@@ -110,21 +112,20 @@ public class RegisterTests extends TestBase {
     }
 
     @Test
-    public LoginTests registerWithValidData() {
+    public void registerWithValidData() {
         new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
                 .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
                 .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail")+ Instant.now().toEpochMilli())
                 .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
                 .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton()
+                .validateRedirectionToAcountCreatedPage()
                 .clickMyAccountDropdown()
                 .clickMyAccountOption("Logout");
 
-        // .validateRedirectionToAcountCreatedPage();
-        return new LoginTests();
     }
 }

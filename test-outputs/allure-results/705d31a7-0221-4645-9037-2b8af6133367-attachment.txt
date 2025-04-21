@@ -1,0 +1,16 @@
+[INFO] - [15-04-2025 23:08:12] [main] [org.testng.internal.Utils] - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[INFO] - [15-04-2025 23:08:14] [main] [com.qafox.listeners.TestNGListeners] -  Test execution started
+[INFO] - [15-04-2025 23:08:14] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [15-04-2025 23:08:14] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  E:\ITI\Automation Framework\WebAutomationProject\src\test\resources\testng.xml
+
+[INFO] - [15-04-2025 23:08:23] [main] [com.qafox.drivers.DriverManager] - driver created on edge
+[INFO] - [15-04-2025 23:08:23] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.Waits] - waiting for element to be visible:  By.cssSelector: input.btn.btn-primary
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.Waits] - waiting for element to be present:  By.cssSelector: input.btn.btn-primary
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [15-04-2025 23:08:32] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [15-04-2025 23:08:33] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
