@@ -28,8 +28,6 @@ public class BrowserFactory {
         chromeOptions.addArguments("--disable-infobars");
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.addArguments("--allow-remote-origins=*");
-        //<Map String , Object> prefs=
-        //chromeOptions.setExperimentalOption("prefs",prefs);
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         //chromeOptions.addArguments("--headless");
         return chromeOptions;
@@ -54,7 +52,7 @@ public class BrowserFactory {
         edgeOptions.addArguments("--disable-notifications");
         edgeOptions.addArguments("--allow-remote-origins=*");
         edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        //edgeOptions.addArguments("--headless");
+        edgeOptions.addArguments("--headless");
         return edgeOptions;
     }
 }
