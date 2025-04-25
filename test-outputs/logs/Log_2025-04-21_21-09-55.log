@@ -1,0 +1,41 @@
+[INFO] - [21-04-2025 21:09:56] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\Lenovo\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml
+
+[INFO] - [21-04-2025 21:10:06] [main] [com.qafox.drivers.DriverManager] - driver created on edge
+[INFO] - [21-04-2025 21:10:06] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [21-04-2025 21:10:10] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=information/contact
+[INFO] - [21-04-2025 21:10:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-name
+[INFO] - [21-04-2025 21:10:10] [main] [com.qafox.utils.Waits] - waiting for element to be visible:  By.id: input-name
+[INFO] - [21-04-2025 21:10:10] [main] [com.qafox.utils.Waits] - waiting for element to be present:  By.id: input-name
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-name
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-name
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-name
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-name
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - data entered John Doe  in the field By.id: input-name
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Waits] - waiting for element to be visible:  By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Waits] - waiting for element to be present:  By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - data entered john@example.com  in the field By.id: input-email
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Waits] - waiting for element to be visible:  By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Waits] - waiting for element to be present:  By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:11] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.ElementActions] - data entered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.  in the field By.id: input-enquiry
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.Waits] - waiting for element to be visible:  By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.Waits] - waiting for element to be present:  By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:12] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:13] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [21-04-2025 21:10:13] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.xpath: //div[@class='text-danger' and contains(text(),'E-Mail Address')]
+[INFO] - [21-04-2025 21:10:13] [main] [com.qafox.utils.Waits] - waiting for element to be visible:  By.xpath: //div[@class='text-danger' and contains(text(),'E-Mail Address')]
+[INFO] - [21-04-2025 21:10:13] [main] [com.qafox.utils.Waits] - waiting for element to be present:  By.xpath: //div[@class='text-danger' and contains(text(),'E-Mail Address')]
+[INFO] - [21-04-2025 21:10:25] [main] [com.qafox.utils.BrowserActions] - closing browser
