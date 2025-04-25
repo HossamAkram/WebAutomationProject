@@ -26,7 +26,7 @@ public class HomePageTests extends TestBase {
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
                 .addProductToCart("iPhone")
-                //.validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
+                .validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
                 .clickShoppingCartLink()
                 .validateShoppingCartPage();
     }
