@@ -19,9 +19,6 @@ public class ForgotPasswordPage {
     private By continueButton =By.cssSelector("input.btn.btn-primary");
     private By emailConfirmationMessage = By.cssSelector("div.alert.alert-success.alert-dismissible");
     private By invalidEmailErrorMessage = By.cssSelector("div.alert.alert-danger.alert-dismissible");
-    private By myAccountDropdown = By.cssSelector("a[title='My Account']");
-    private By logoutOption = By.xpath("//li[@class='dropdown open']//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Logout']");
-
 
     //navigate to page
     @Step("Navigate to forgot password page")
@@ -36,13 +33,11 @@ public class ForgotPasswordPage {
         return this;
     }
 
-
     @Step("Click on the continue button")
     public ForgotPasswordPage clickContinueButton() {
         ElementActions.click(driver, continueButton);
         return this;
     }
-
     //validations
     @Step("Validate that the confirmation email message is displayed")
     public ForgotPasswordPage validateEmailConfirmationMessage() {

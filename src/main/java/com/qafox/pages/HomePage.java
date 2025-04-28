@@ -25,14 +25,15 @@ public class HomePage {
     private By currencyDropdown = By.cssSelector("button.btn.btn-link.dropdown-toggle");
     private By wishlistLink = By.id("wishlist-total");
     private By shoppingCartLink = By.xpath("//a[@title='Shopping Cart']");
-    //private By checkoutLink = By.xpath("//a[@title='Checkout']");
     private By cartDropdownButton = By.id("cart-total");
-    private By addToCartButton = By.xpath("//button[contains(@onclick, 'cart.add')]");
     private By addToWishListButton = By.xpath("//button[contains(@onclick, 'wishlist.add')]");
     private By compareProductButton = By.xpath("//button[contains(@onclick, 'compare.add')]");
     private By addedToComparisonListMessage = By.cssSelector("div.alert.alert-success.alert-dismissible");
     private By productComparisonLink = By.xpath("//a[contains(@href, 'product/compare')]");
     private By priceElement = By.cssSelector("div.caption p.price");
+    private By bannerImage = By.cssSelector("#slideshow0 a > img");
+    private By productTitle = By.tagName("h1");
+    private By bannerArrow = By.cssSelector(".swiper-button-prev");
 
 
     //navigate to page
@@ -75,17 +76,7 @@ public class HomePage {
     }
     @Step("Click on Wishlist link")
     public HomePage clickWishlistLink() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         ElementActions.click(driver, wishlistLink);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         return this;
     }
 
@@ -111,6 +102,23 @@ public class HomePage {
     @Step("Click search button")
     public HomePage clickSearchButton() {
         ElementActions.click(driver, searchButton);
+        return this;
+    }
+
+    @Step("Click on the Home Page Banner")
+    public HomePage clickHomePageBanner() {
+        ElementActions.click(driver, bannerImage);
+        return this;
+    }
+
+    @Step("Click on Banner Arrow")
+    public HomePage clickBannerArrow() {
+        ElementActions.click(driver, bannerArrow);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return this;
     }
 
@@ -163,6 +171,16 @@ public class HomePage {
         Waits.waitForElementPresence(driver,priceElement);
         String priceText = ElementActions.getText(driver,priceElement);
         Validations.validateTrue(priceText.contains(currencySymbol), "Currency not changed to " + currencySymbol);
+        return this;
+    }
+
+    @Step("Validate that product title contains 'iPhone'")
+    public HomePage validateProductTitleContainsIphone() {
+        String actualProductTitle = ElementActions.getText(driver, productTitle);
+        CustomSoftAssertion.softAssertion.assertTrue(
+                actualProductTitle.toLowerCase().contains("iphone"),
+                "Expected product title to contain 'iPhone', but found: " + actualProductTitle
+        );
         return this;
     }
 

@@ -1,0 +1,425 @@
+[INFO] - [29-04-2025 01:24:52] [main] [org.testng.internal.Utils] - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[INFO] - [29-04-2025 01:24:53] [main] [com.qafox.listeners.TestNGListeners] -  Test execution started
+[INFO] - [29-04-2025 01:24:53] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [29-04-2025 01:24:53] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  E:\ITI\Automation Framework\WebAutomationProject\src\test\testng.xml
+
+[INFO] - [29-04-2025 01:24:58] [main] [com.qafox.drivers.DriverManager] - driver created on chrome / local
+[INFO] - [29-04-2025 01:24:58] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [29-04-2025 01:25:00] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:01] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:01] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:01] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:01] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:01] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:02] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:02] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithEmptyForm passed
+[INFO] - [29-04-2025 01:25:04] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:05] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:06] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - data entered DifferentPassword123  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:07] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:08] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:08] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:08] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMismatchedPasswords passed
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:10] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:11] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMissingConfirmPassword passed
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:13] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:14] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:15] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMissingEmail passed
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:17] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:18] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:19] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:19] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:19] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:19] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:19] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:20] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:20] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:20] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMissingFirstName passed
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:21] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:22] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:23] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:23] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:23] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:23] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:23] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:24] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:24] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:24] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMissingLastName passed
+[INFO] - [29-04-2025 01:25:25] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:25] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:25] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:25] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:25] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:25] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:26] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:27] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:27] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:27] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMissingPassword passed
+[INFO] - [29-04-2025 01:25:28] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:28] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:28] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:28] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:29] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:30] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:31] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:32] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:32] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithMissingTelephone passed
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/register
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-firstname
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-firstname
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.ElementActions] - data entered Hossam  in the field By.id: input-firstname
+[INFO] - [29-04-2025 01:25:33] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-lastname
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-lastname
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - data entered Akram  in the field By.id: input-lastname
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - data entered validemail@domain.com1745879134135  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-telephone
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-telephone
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - data entered 01020304050  in the field By.id: input-telephone
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-password
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-password
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-password
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-password
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-confirm
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-confirm
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - data entered 4UTtb8dEGy@5  in the field By.id: input-confirm
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:34] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:35] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input[name='agree']
+[INFO] - [29-04-2025 01:25:35] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:35] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:35] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:35] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.BrowserActions] - currnet url: https://tutorialsninja.com/demo/index.php?route=account/success
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: a[title='My Account']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: a[title='My Account']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: a[title='My Account']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: a[title='My Account']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: a[title='My Account']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.xpath: //li[@class='dropdown open']//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Logout']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.xpath: //li[@class='dropdown open']//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Logout']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.ElementActions] - finding element By.xpath: //li[@class='dropdown open']//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Logout']
+[INFO] - [29-04-2025 01:25:36] [main] [com.qafox.utils.ElementActions] - finding element By.xpath: //li[@class='dropdown open']//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Logout']
+[INFO] - [29-04-2025 01:25:37] [main] [com.qafox.utils.ElementActions] - clicked on element By.xpath: //li[@class='dropdown open']//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Logout']
+[INFO] - [29-04-2025 01:25:37] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:37] [main] [com.qafox.listeners.TestNGListeners] -  Test case registerWithValidData passed
+[INFO] - [29-04-2025 01:25:38] [main] [com.qafox.utils.PropertiesUtil] - Loading Properties File Data
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/forgotten
+[ERROR] - [29-04-2025 01:25:39] [main] [com.qafox.utils.JsonUtil] - Missing property in path $['invalidemail@domain'] No results for json path: invalidemail@domain.com in the json file: test-data
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - data entered   in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:39] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: div.alert.alert-danger.alert-dismissible
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: div.alert.alert-danger.alert-dismissible
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: div.alert.alert-danger.alert-dismissible
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: div.alert.alert-danger.alert-dismissible
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.ElementActions] - getting text from  By.cssSelector: div.alert.alert-danger.alert-dismissible  text: Warning: The E-Mail Address was not found in our records, please try again!
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: div.alert.alert-danger.alert-dismissible
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.Validations] - Validating that actual value: 'Warning: The E-Mail Address was not found in our records, please try again!' matches expected value: 'Warning: The E-Mail Address was not found in our records, please try again!'.
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.utils.AllureUtil] - Logs attached to the report
+[INFO] - [29-04-2025 01:25:40] [main] [com.qafox.listeners.TestNGListeners] -  Test case forgotPasswordInvalidEmail passed
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.BrowserActions] - navigated to url:  https://tutorialsninja.com/demo/index.php?route=account/forgotten
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.id: input-email
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.id: input-email
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.ElementActions] - finding element By.id: input-email
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.ElementActions] - data entered hossam.akram99@gmail.com  in the field By.id: input-email
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:42] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.ElementActions] - clicked on element By.cssSelector: input.btn.btn-primary
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.Waits] - waiting for element to be clickable:  By.cssSelector: div.alert.alert-success.alert-dismissible
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.Scrolling] - scrolling to element:  By.cssSelector: div.alert.alert-success.alert-dismissible
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: div.alert.alert-success.alert-dismissible
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: div.alert.alert-success.alert-dismissible
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.ElementActions] - getting text from  By.cssSelector: div.alert.alert-success.alert-dismissible  text: An email with a confirmation link has been sent your email address.
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.ElementActions] - finding element By.cssSelector: div.alert.alert-success.alert-dismissible
+[INFO] - [29-04-2025 01:25:44] [main] [com.qafox.utils.Validations] - Validating that actual value: 'An email with a confirmation link has been sent your email address.' matches expected value: 'An email with a confirmation link has been sent your email address.'.

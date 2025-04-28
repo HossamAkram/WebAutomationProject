@@ -26,7 +26,7 @@ public class HomePageTests extends TestBase {
         new HomePage(DriverManager.getDriver())
                 .navigateToHomePage()
                 .addProductToCart("iPhone")
-                //.validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
+                .validateCartItems(PropertiesUtil.getPropertyValue("iphoneAdded"))
                 .clickShoppingCartLink()
                 .validateShoppingCartPage();
     }
@@ -57,6 +57,22 @@ public class HomePageTests extends TestBase {
                 .clickCurrencyDropdown()
                 .selectCurrency("EUR")
                 .validateCurrencyChanged("€");
+    }
+    @Test (priority = 1)
+    public void testBannerProductTitle() {
+        new HomePage(DriverManager.getDriver())
+                .navigateToHomePage()
+                .clickHomePageBanner()
+                .validateProductTitleContainsIphone();
+    }
+
+    @Test (priority = 1)
+    public void testBannerProductTitle2() {
+        new HomePage(DriverManager.getDriver())
+                .navigateToHomePage()
+                .clickBannerArrow()
+                .clickHomePageBanner()
+                .validateProductTitleContainsIphone();
     }
 
 }
