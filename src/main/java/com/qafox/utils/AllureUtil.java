@@ -9,8 +9,6 @@ import java.nio.file.Path;
 public class AllureUtil {
 
     public static final String ALLURE_RESULTS_PATH = "test-outputs/allure-results";
-    private static final String LOGS_PATH = "E:\\ITI\\Automation Framework\\WebAutomationProject\\test-outputs\\logs";  // Make this an absolute path
-
 
     private AllureUtil(){
         super();
@@ -18,9 +16,9 @@ public class AllureUtil {
 
     public static void attachLogs(){
         try {
-            File logFile = FilesUtil.getLatestFile(LOGS_PATH);
+            File logFile = FilesUtil.getLatestFile(LogsUtil.LOGS_PATH);
             if (!logFile.exists()) {
-                LogsUtil.warn("Log file does not exist: " + LOGS_PATH);
+                LogsUtil.warn("Log file does not exist: " + LogsUtil.LOGS_PATH);
                 return;
             }
             Allure.addAttachment("logs.log", Files.readString(Path.of(logFile.getPath())));

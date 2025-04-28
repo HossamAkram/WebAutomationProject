@@ -70,16 +70,29 @@ jobs:
         continue-on-error: true
         run: mvn test  -Dexecution.type="Remote"
 
+      - name: Create necessary directories
+        run: |
+          mkdir -p test-outputs/allure-results
+          mkdir -p target/site/allure-maven-plugin
+
+      - name: Check test-outputs directory
+        run: |
+          ls -la test-outputs || echo "test-outputs directory not found"
+          ls -la test-outputs/allure-results || echo "allure-results directory not found"
+
       - name: Generate Allure report
-        run: mvn allure:report
+        run: |
+          mvn allure:report -Dallure.results.directory=test-outputs/allure-results
+          echo "Allure report generation completed"
+
+      - name: Check if Allure report was generated
+        run: |
+          ls -la target/site || echo "site directory not found"
+          ls -la target/site/allure-maven-plugin || echo "allure-maven-plugin directory not found"
 
       - name: Copy patch file to allure-maven-plugin folder
         run: |
-          mkdir -p target/site/allure-maven-plugin
           cp src/main/resources/allow-file-access_open-report_chrome_windows.bat target/site/allure-maven-plugin || echo "Patch file not found, continuing..."
-
-      - name: Check files in the allure-maven-plugin folder
-        run: ls -la target/site/allure-maven-plugin || echo "Directory may not exist yet"
 
       - name: Upload Allure Report
         uses: actions/upload-artifact@v4
