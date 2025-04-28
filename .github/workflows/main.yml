@@ -66,7 +66,7 @@ jobs:
       - name: Check running containers
         run: docker ps
 
-      - name: Run tests - Chrome Headless
+      - name: Run tests - Chrome
         continue-on-error: true
         run: mvn test  -Dexecution.type="Remote"
 
