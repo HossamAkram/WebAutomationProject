@@ -9,6 +9,8 @@ import java.nio.file.Path;
 public class AllureUtil {
 
     public static final String ALLURE_RESULTS_PATH = "test-outputs/allure-results";
+    private static final String LOGS_PATH = "E:\\ITI\\Automation Framework\\WebAutomationProject\\test-outputs\\logs";  // Make this an absolute path
+
 
     private AllureUtil(){
         super();

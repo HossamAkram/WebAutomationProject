@@ -94,7 +94,7 @@ public class ContactUsTests extends TestBase {
                 .validateEnquiryErrorMessage();
     }
 
-   /* @Test(description = "Enquiry too long", priority = 1)
+    @Test(description = "Enquiry too long", priority = 1)
     public void testEnquiryTooLong() {
         new ContactUsPage(DriverManager.getDriver())
                 .navigateToContactUsPage()
@@ -103,6 +103,6 @@ public class ContactUsTests extends TestBase {
                 .enterEnquiry(testData.getJsonData("contactUs.longEnquiry"))
                 .clickSubmit()
                 .validateEnquiryErrorMessage();
-    }*/
+    }
 
 }
