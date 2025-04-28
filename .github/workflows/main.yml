@@ -68,7 +68,7 @@ jobs:
 
       - name: Run tests - Chrome Headless
         continue-on-error: true
-        run: mvn test -Dtest=SauceDemoEndToEndTest -Dexecution.type="Remote"
+        run: mvn test  -Dexecution.type="Remote"
 
       - name: Generate Allure report
         run: mvn allure:report
