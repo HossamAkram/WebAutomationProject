@@ -4,6 +4,7 @@ import com.qafox.utils.*;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -153,6 +154,8 @@ public class HomePage {
     }
     @Step("Validate redirection to Product Comparison page")
     public void validateProductComparisonPage() {
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.urlContains(PropertiesUtil.getPropertyValue("productComparisonPage")));
         Validations.validatePageUrl(driver, PropertiesUtil.getPropertyValue("productComparisonPage"));
     }
     @Step("Validate that the currency has changed to {currencySymbol}")

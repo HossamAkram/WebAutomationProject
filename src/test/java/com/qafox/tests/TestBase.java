@@ -14,7 +14,7 @@ public class TestBase {
     //configurations
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
-        DriverManager.createInstance("edge");
+        DriverManager.createInstance(PropertiesUtil.getPropertyValue("browserType"),PropertiesUtil.getPropertyValue("executionType"));
     }
     @BeforeClass(alwaysRun = true)
     public void beforeClass() {

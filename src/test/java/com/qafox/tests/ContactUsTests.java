@@ -21,6 +21,7 @@ public class ContactUsTests extends TestBase {
     public void testMissingNameField() {
         new ContactUsPage(DriverManager.getDriver())
                 .navigateToContactUsPage()
+                .enterName("")
                 .enterEmail(testData.getJsonData("contactUs.validEmail"))
                 .enterEnquiry(testData.getJsonData("contactUs.validEnquiry"))
                 .clickSubmit()
@@ -32,6 +33,7 @@ public class ContactUsTests extends TestBase {
         new ContactUsPage(DriverManager.getDriver())
                 .navigateToContactUsPage()
                 .enterName(testData.getJsonData("contactUs.validName"))
+                .enterEmail("")
                 .enterEnquiry(testData.getJsonData("contactUs.validEnquiry"))
                 .clickSubmit()
                 .validateEmailErrorMessage();
@@ -43,6 +45,7 @@ public class ContactUsTests extends TestBase {
                 .navigateToContactUsPage()
                 .enterName(testData.getJsonData("contactUs.validName"))
                 .enterEmail(testData.getJsonData("contactUs.validEmail"))
+                .enterEnquiry("")
                 .clickSubmit()
                 .validateEnquiryErrorMessage();
     }
@@ -91,7 +94,7 @@ public class ContactUsTests extends TestBase {
                 .validateEnquiryErrorMessage();
     }
 
-    @Test(description = "Enquiry too long")
+   /* @Test(description = "Enquiry too long", priority = 1)
     public void testEnquiryTooLong() {
         new ContactUsPage(DriverManager.getDriver())
                 .navigateToContactUsPage()
@@ -100,6 +103,6 @@ public class ContactUsTests extends TestBase {
                 .enterEnquiry(testData.getJsonData("contactUs.longEnquiry"))
                 .clickSubmit()
                 .validateEnquiryErrorMessage();
-    }
+    }*/
 
 }

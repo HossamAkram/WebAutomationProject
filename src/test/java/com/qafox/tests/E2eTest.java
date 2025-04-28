@@ -2,10 +2,14 @@ package com.qafox.tests;
 
 import com.qafox.drivers.DriverManager;
 import com.qafox.listeners.TestNGListeners;
+import com.qafox.pages.ContactUsPage;
 import com.qafox.pages.HomePage;
 import com.qafox.pages.LoginPage;
+import com.qafox.pages.RegisterPage;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import java.time.Instant;
 
 @Listeners(TestNGListeners.class)
 public class E2eTest extends TestBase{
@@ -14,18 +18,18 @@ public class E2eTest extends TestBase{
     @Test
     public void E2eScenario(){
 
-        /*new RegisterPage(DriverManager.getDriver())
+        new RegisterPage(DriverManager.getDriver())
                 .navigateToRegisterPage()
-                .enterFirstName(testData.getJsonData("registerCredentials.item1.firstName"))
-                .enterLastName(testData.getJsonData("registerCredentials.item1.lastName"))
-                .enterEmail(testData.getJsonData("registerCredentials.item1.validEmail"))
-                .enterTelephone(testData.getJsonData("registerCredentials.item1.telephone"))
-                .enterPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
-                .confirmPassword(testData.getJsonData("registerCredentials.item1.validPassword"))
+                .enterFirstName(testData.getJsonData("registerCredentials.user1.firstName"))
+                .enterLastName(testData.getJsonData("registerCredentials.user1.lastName"))
+                .enterEmail(testData.getJsonData("registerCredentials.user1.validEmail")+Instant.now().toEpochMilli())
+                .enterTelephone(testData.getJsonData("registerCredentials.user1.telephone"))
+                .enterPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
+                .confirmPassword(testData.getJsonData("registerCredentials.user1.validPassword"))
                 .toggleTermsCheckButton()
                 .clickContinueButton()
                 .clickMyAccountDropdown()
-                .clickMyAccountOption("Logout");*/
+                .clickMyAccountOption("Logout");
         new LoginPage(DriverManager.getDriver())
                 .navigateToLoginPage()
                 .enterEmail(testData.getJsonData("loginCredentials.validEmail"))
@@ -41,7 +45,7 @@ public class E2eTest extends TestBase{
                 .clickSearchButton()
                 .validateSearchResults("iPhone")
                 .navigateToHomePage()
-                .addProductToCart("iPhone")
+                .addProductToCart("MacBook")
                 .addProductToWishlist()
                 .addProductToComparison()
                 .validateAddedToComparisonListMessage()
@@ -49,6 +53,14 @@ public class E2eTest extends TestBase{
                 .clickWishlistLink()
                 .clickShoppingCartLink()
                 .validateShoppingCartPage();
+        new ContactUsPage(DriverManager.getDriver())
+                .navigateToContactUsPage()
+                .enterName(testData.getJsonData("contactUs.validName"))
+                .enterEmail(testData.getJsonData("contactUs.validEmail"))
+                .enterEnquiry(testData.getJsonData("contactUs.validEnquiry"))
+                .clickSubmit()
+                .validateSuccessfulSubmissionUrl();
+
 
 
         //register with valid data and logout

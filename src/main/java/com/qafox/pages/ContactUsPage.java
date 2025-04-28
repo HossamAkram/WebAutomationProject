@@ -59,7 +59,7 @@ public class ContactUsPage {
     //validations
     @Step("Validate name error message is displayed correctly")
     public ContactUsPage validateNameErrorMessage() {
-        String actualText = driver.findElement(nameErrorMsg).getText();
+        String actualText = ElementActions.getText(driver,nameErrorMsg);
         String expectedText = PropertiesUtil.getPropertyValue("invalidNameFieldMessage");
         CustomSoftAssertion.softAssertion.assertEquals(actualText, expectedText, "Name error message mismatch");
         return this;
@@ -67,7 +67,7 @@ public class ContactUsPage {
 
     @Step("Validate email error message is displayed correctly")
     public ContactUsPage validateEmailErrorMessage() {
-        String actualText = driver.findElement(emailErrorMsg).getText();
+        String actualText = ElementActions.getText(driver,emailErrorMsg);
         String expectedText = PropertiesUtil.getPropertyValue("invalidEmailFieldMessage");
         CustomSoftAssertion.softAssertion.assertEquals(actualText, expectedText, "Email error message mismatch");
         return this;
@@ -75,7 +75,7 @@ public class ContactUsPage {
 
     @Step("Validate enquiry error message is displayed correctly")
     public ContactUsPage validateEnquiryErrorMessage() {
-        String actualText = ElementActions.getText(driver,emailErrorMsg);
+        String actualText = ElementActions.getText(driver,enquiryErrorMsg);
         String expectedText = PropertiesUtil.getPropertyValue("invalidEnquiryFieldMessage");
         CustomSoftAssertion.softAssertion.assertEquals(actualText, expectedText, "Enquiry error message mismatch");
         return this;

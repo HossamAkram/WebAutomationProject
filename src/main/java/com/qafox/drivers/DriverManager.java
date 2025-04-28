@@ -13,13 +13,17 @@ public class DriverManager {
     private DriverManager(){
         super();
     }
-    @Step("create driver instance on: {browserName}")
-    public static WebDriver createInstance(String browserName){
-     WebDriver driver = BrowserFactory.getBrowser(browserName);
-     LogsUtil.info("driver created on",browserName);
-     setDriver(driver);
-     return getDriver();
-
+    @Step("create driver instance on: {browserName} [{executionType}]")
+    public static WebDriver createInstance(String browserName, String executionType) {
+        WebDriver driver;
+        if ("remote".equalsIgnoreCase(executionType)) {
+            driver = BrowserFactory.getRemoteBrowser(browserName);
+        } else {
+            driver = BrowserFactory.getLocalBrowser(browserName);
+        }
+        LogsUtil.info("driver created on", browserName + " / " + executionType);
+        setDriver(driver);
+        return getDriver();
     }
 
     public static WebDriver getDriver(){

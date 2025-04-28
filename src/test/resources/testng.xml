@@ -8,6 +8,8 @@
             <class name="com.qafox.tests.LoginTests"/>
             <class name="com.qafox.tests.HomePageTests"/>
             <class name="com.qafox.tests.ShoppingCartTests"/>
+            <class name="com.qafox.tests.ContactUsTests"/>
+
         </classes>
     </test>
 

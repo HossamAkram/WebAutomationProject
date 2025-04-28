@@ -4,18 +4,19 @@
       "firstName": "Hossam",
       "lastName": "Akram",
       "validEmail": "validemail@domain.com",
-      "telephone": "0100000000",
+      "telephone": "01020304050",
       "validPassword": "4UTtb8dEGy@5",
-      "invalidPAssword": "4UTtb8dEGy@5a"
+      "invalidPassword": "invalidpassword"
     },
     "user2": {
       "firstName": "Hossam",
       "lastName": "Akram",
       "validEmail": "validemail2@domain.com",
-      "telephone": "0100000000",
+      "telephone": "01020304050",
       "validPassword": "4UTtb8dEGy@5",
       "invalidPAssword": "4UTtb8dEGy@5a"
     }
+
   },
 
   "loginCredentials": {
@@ -27,7 +28,7 @@
   "contactUs": {
     "validName": "John Doe",
     "validEmail": "john@example.com",
-    "validEnquiry": "I am interested in learning more about your products and services.",
+    "validEnquiry": "All your products are out of stock.",
     "shortName": "Jo",
     "longName": "JonathanJonathanJonathanJonathanJonathanJonathanJonathan",
     "invalidEmail": "john[at]example.com",
