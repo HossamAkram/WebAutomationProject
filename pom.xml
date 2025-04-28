@@ -29,7 +29,7 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>listeners.TestNGListeners</value>
+                            <value>com.qafox.listeners.TestNGListeners</value>
                         </property>
                     </properties>
                 </configuration>
