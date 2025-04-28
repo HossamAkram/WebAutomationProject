@@ -18,9 +18,9 @@ public class AllureUtil {
 
     public static void attachLogs(){
         try {
-            File logFile = FilesUtil.getLatestFile(LogsUtil.LOGS_PATH);
+            File logFile = FilesUtil.getLatestFile(LOGS_PATH);
             if (!logFile.exists()) {
-                LogsUtil.warn("Log file does not exist: " + LogsUtil.LOGS_PATH);
+                LogsUtil.warn("Log file does not exist: " + LOGS_PATH);
                 return;
             }
             Allure.addAttachment("logs.log", Files.readString(Path.of(logFile.getPath())));
